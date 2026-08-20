@@ -1,10 +1,9 @@
 import { useState } from "react";
 import { NavLink } from "react-router";
 import { Box, Stack, Typography, Button, IconButton, Drawer } from "@mui/material";
-import MenuIcon from "@mui/icons-material/Menu";
-import CloseIcon from "@mui/icons-material/Close";
 import icon from "../assets/_2243895274448.png";
 import iconUser from "../assets/User.png";
+import { Close, Menu } from "@mui/icons-material";
 
 const menuList = [
   { name: "Как покупать", path: "/how-to-buy" },
@@ -107,7 +106,7 @@ export default function Header() {
           onClick={handleClick}
           sx={{ display: { xs: "flex", lg: "none" }, color: "#1B1F3B" }}
         >
-          <MenuIcon />
+          <Menu />
         </IconButton>
       </Stack>
 
@@ -122,7 +121,7 @@ export default function Header() {
       >
         <Stack direction="row" sx={{ justifyContent: "flex-end" }}>
           <IconButton onClick={handleClick} sx={{ color: "#1B1F3B" }}>
-            <CloseIcon />
+            <Close />
           </IconButton>
         </Stack>
 

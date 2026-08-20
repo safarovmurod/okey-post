@@ -1,10 +1,9 @@
 import { useState } from "react";
 import { Box, Stack, Typography, IconButton } from "@mui/material";
-import ArrowBackIcon from "@mui/icons-material/ArrowBack";
-import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import { categoryList, afzalList } from "../../data/api";
 import flagRu from "../../assets/flag-ru.png";
 import flagUk from "../../assets/flag-uk.png";
+import { ArrowBack, ArrowForward } from "@mui/icons-material";
 
 export default function Products() {
   const [catId, setCatId] = useState(categoryList[0].id);
@@ -89,7 +88,7 @@ export default function Products() {
           }}
         >
           <IconButton onClick={() => handleCategory(prevCategory)} sx={{ color: "#00C875" }}>
-            <ArrowBackIcon sx={{ fontSize: "20px" }} />
+            <ArrowBack sx={{ fontSize: "20px" }} />
           </IconButton>
 
           {categoryList.map((category) => {
@@ -129,7 +128,7 @@ export default function Products() {
           })}
 
           <IconButton onClick={() => handleCategory(nextCategory)} sx={{ color: "#00C875" }}>
-            <ArrowForwardIcon sx={{ fontSize: "20px" }} />
+            <ArrowForward sx={{ fontSize: "20px" }} />
           </IconButton>
         </Stack>
 
@@ -222,7 +221,7 @@ export default function Products() {
               }}
             />
             <IconButton onClick={handlePrev} sx={{ color: "#00C875" }}>
-              <ArrowBackIcon />
+              <ArrowBack />
             </IconButton>
           </Stack>
 
@@ -240,7 +239,7 @@ export default function Products() {
 
           <Stack direction="row" sx={{ alignItems: "center", gap: "14px" }}>
             <IconButton onClick={handleNext} sx={{ color: "#00C875" }}>
-              <ArrowForwardIcon />
+              <ArrowForward />
             </IconButton>
             <Box
               component="img"

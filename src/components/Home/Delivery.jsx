@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Box, Stack, Typography, IconButton } from "@mui/material";
-import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import { deliveryList } from "../../data/api";
+import { KeyboardArrowDown } from "@mui/icons-material";
 
 export default function Delivery() {
   const [openId, setOpenId] = useState(0);
@@ -77,7 +77,7 @@ export default function Delivery() {
 
                   <Stack sx={{ ...cellStyle, alignItems: "center", width: { xs: "100%", lg: "80px" } }}>
                     <IconButton sx={{ color: "#00C875" }}>
-                      <KeyboardArrowDownIcon
+                      <KeyboardArrowDown
                         sx={{ transition: "transform 0.3s", transform: isOpen ? "rotate(180deg)" : "rotate(0deg)" }}
                       />
                     </IconButton>

@@ -1,13 +1,4 @@
-import CheckroomIcon from "@mui/icons-material/Checkroom";
-import DevicesIcon from "@mui/icons-material/Devices";
-import ShoppingBagIcon from "@mui/icons-material/ShoppingBag";
-import ToysIcon from "@mui/icons-material/Toys";
-import FitnessCenterIcon from "@mui/icons-material/FitnessCenter";
-import SpaIcon from "@mui/icons-material/Spa";
-import SavingsIcon from "@mui/icons-material/Savings";
-import VerifiedIcon from "@mui/icons-material/Verified";
-import LocalShippingIcon from "@mui/icons-material/LocalShipping";
-import StorefrontIcon from "@mui/icons-material/Storefront";
+import { CalendarMonth, Checkroom, Devices, FitnessCenter, FlightTakeoff, Inventory2, LocalPostOffice, LocalShipping, Savings, ShoppingBag, Sms, Spa, Storefront, Timer, Toys, Verified } from "@mui/icons-material";
 
 import jeans from "../assets/jeans.png";
 import parka from "../assets/parka.png";
@@ -50,15 +41,12 @@ import step2 from "../assets/step2.png";
 import step3 from "../assets/step3.png";
 import step4 from "../assets/step4.png";
 
-import LocalPostOfficeIcon from "@mui/icons-material/LocalPostOffice";
-import FlightTakeoffIcon from "@mui/icons-material/FlightTakeoff";
-import Inventory2Icon from "@mui/icons-material/Inventory2";
 
 export const deliveryList = [
   {
     id: 1,
     name: "ПОЧТА РОССИИ",
-    icon: LocalPostOfficeIcon,
+    icon: LocalPostOffice,
     days: "10–14 дней",
     price: "от £27.00",
     total: "£41.99",
@@ -67,7 +55,7 @@ export const deliveryList = [
   {
     id: 2,
     name: "EMS ПОЧТА РОССИЯ",
-    icon: FlightTakeoffIcon,
+    icon: FlightTakeoff,
     days: "9–12 дней",
     price: "от £40.00",
     total: "£54.55",
@@ -76,7 +64,7 @@ export const deliveryList = [
   {
     id: 3,
     name: "ПОЧТА РОССИИ МЕЛКИЕ ПАКЕТЫ",
-    icon: Inventory2Icon,
+    icon: Inventory2,
     days: "10–14 дней",
     price: "от £13.00",
     total: "£90.50",
@@ -433,19 +421,19 @@ export const cosList = [
 ];
 
 export const categoryList = [
-  { id: 1, name: "Одежда", nameOf: "одежды", icon: CheckroomIcon, items: clothesList },
-  { id: 2, name: "Электроника", nameOf: "электроники", icon: DevicesIcon, items: techList },
-  { id: 3, name: "Аксессуары", nameOf: "аксессуаров", icon: ShoppingBagIcon, items: accList },
-  { id: 4, name: "Для детей", nameOf: "детских товаров", icon: ToysIcon, items: kidsList },
-  { id: 5, name: "Для спорта", nameOf: "спорттоваров", icon: FitnessCenterIcon, items: sportList },
-  { id: 6, name: "Косметика", nameOf: "косметики", icon: SpaIcon, items: cosList },
+  { id: 1, name: "Одежда", nameOf: "одежды", icon: Checkroom, items: clothesList },
+  { id: 2, name: "Электроника", nameOf: "электроники", icon: Devices, items: techList },
+  { id: 3, name: "Аксессуары", nameOf: "аксессуаров", icon: ShoppingBag, items: accList },
+  { id: 4, name: "Для детей", nameOf: "детских товаров", icon: Toys, items: kidsList },
+  { id: 5, name: "Для спорта", nameOf: "спорттоваров", icon: FitnessCenter, items: sportList },
+  { id: 6, name: "Косметика", nameOf: "косметики", icon: Spa, items: cosList },
 ];
 
 export const afzalList = [
-  { id: 1, icon: SavingsIcon, title: "Экономия", text: "до 70%" },
-  { id: 2, icon: VerifiedIcon, title: "Только подлинная", text: "продукция" },
-  { id: 3, icon: LocalShippingIcon, title: "Оперативная", text: "доставка" },
-  { id: 4, icon: StorefrontIcon, title: "Огромный", text: "выбор товаров" },
+  { id: 1, icon: Savings, title: "Экономия", text: "до 70%" },
+  { id: 2, icon: Verified, title: "Только подлинная", text: "продукция" },
+  { id: 3, icon: LocalShipping, title: "Оперативная", text: "доставка" },
+  { id: 4, icon: Storefront, title: "Огромный", text: "выбор товаров" },
 ];
 export const countryList = ["Россия", "Казахстан", "Беларусь", "Узбекистан", "Таджикистан"];
 export const serviceList = [
@@ -517,26 +505,23 @@ export const bannerList = [
     btnText: "Получить адрес в UK",
   },
 ];
-import CalendarMonthIcon from "@mui/icons-material/CalendarMonth";
-import TimerIcon from "@mui/icons-material/Timer";
-import SmsIcon from "@mui/icons-material/Sms";
 
 export const clientList = [
   {
     id: 1,
-    icon: CalendarMonthIcon,
+    icon: CalendarMonth,
     title: "Больше не значит дороже",
     text: "С ростом веса посылки цена за каждые 0.5 кг уменьшается в прогрессии.",
   },
   {
     id: 2,
-    icon: TimerIcon,
+    icon: Timer,
     title: "Быстрая обработка посылок",
     text: "Посылка обрабатывается не дольше 48 часов после поступления на склад.",
   },
   {
     id: 3,
-    icon: SmsIcon,
+    icon: Sms,
     title: "SMS-уведомления",
     text: "Отслеживайте весь процесс с помощью sms-уведомлений.",
   },

@@ -1,11 +1,7 @@
 import { useState } from "react";
 import { Box, Stack, Typography, Button, TextField, MenuItem, InputAdornment } from "@mui/material";
-import PublicIcon from "@mui/icons-material/Public";
-import LocationCityIcon from "@mui/icons-material/LocationCity";
-import MarkunreadMailboxIcon from "@mui/icons-material/MarkunreadMailbox";
-import ScaleIcon from "@mui/icons-material/Scale";
-import DescriptionIcon from "@mui/icons-material/Description";
 import { countryList, serviceList } from "../../data/api";
+import { Description, LocationCity, MarkunreadMailbox, Public, Scale } from "@mui/icons-material";
 
 export default function Calculator() {
   const [form, setForm] = useState({
@@ -90,7 +86,7 @@ export default function Calculator() {
                   input: {
                     startAdornment: (
                       <InputAdornment position="start">
-                        <PublicIcon sx={{ fontSize: "20px", color: "#8087A6" }} />
+                        <Public sx={{ fontSize: "20px", color: "#8087A6" }} />
                       </InputAdornment>
                     ),
                   },
@@ -117,7 +113,7 @@ export default function Calculator() {
                   input: {
                     startAdornment: (
                       <InputAdornment position="start">
-                        <LocationCityIcon sx={{ fontSize: "20px", color: "#8087A6" }} />
+                        <LocationCity sx={{ fontSize: "20px", color: "#8087A6" }} />
                       </InputAdornment>
                     ),
                   },
@@ -138,7 +134,7 @@ export default function Calculator() {
                   input: {
                     startAdornment: (
                       <InputAdornment position="start">
-                        <MarkunreadMailboxIcon sx={{ fontSize: "20px", color: "#8087A6" }} />
+                        <MarkunreadMailbox sx={{ fontSize: "20px", color: "#8087A6" }} />
                       </InputAdornment>
                     ),
                   },
@@ -159,7 +155,7 @@ export default function Calculator() {
                   input: {
                     startAdornment: (
                       <InputAdornment position="start">
-                        <ScaleIcon sx={{ fontSize: "20px", color: "#8087A6" }} />
+                        <Scale sx={{ fontSize: "20px", color: "#8087A6" }} />
                       </InputAdornment>
                     ),
                   },
@@ -180,7 +176,7 @@ export default function Calculator() {
                   input: {
                     startAdornment: (
                       <InputAdornment position="start">
-                        <DescriptionIcon sx={{ fontSize: "20px", color: "#8087A6" }} />
+                        <Description sx={{ fontSize: "20px", color: "#8087A6" }} />
                       </InputAdornment>
                     ),
                   },
