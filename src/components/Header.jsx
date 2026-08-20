@@ -62,10 +62,7 @@ export default function Header() {
           direction="row"
           sx={{ alignItems: "center", gap: "10px", textDecoration: "none" }}
         >
-          <Box component="img" src={icon} alt="logo" sx={{ width: "32px", height: "auto" }} />
-          <Typography sx={{ fontSize: "22px", color: "#1B1F3B", fontWeight: 700 }}>
-            OkeyPost
-          </Typography>
+          <Box component="img" src={icon} alt="logo" />
         </Stack>
 
         <Stack

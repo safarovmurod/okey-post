@@ -49,10 +49,8 @@ export default function Footer() {
         >
           <Stack sx={{ width: { xs: "100%", lg: "220px" } }}>
             <Stack direction="row" sx={{ alignItems: "center", gap: "10px" }}>
-              <Box component="img" src={logo} alt="logo" sx={{ width: "32px", height: "auto" }} />
-              <Typography sx={{ fontSize: "22px", color: "#16233F", fontWeight: 700 }}>
-                OkeyPost
-              </Typography>
+              <Box component="img" src={logo} alt="logo" />
+
             </Stack>
 
             <Stack direction="row" sx={{ gap: "10px", mt: "20px" }}>
